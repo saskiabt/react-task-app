@@ -16,11 +16,11 @@ function Form(props) {
         event.preventDefault()
     }; 
 
-  
+
 
     return (
-        <div>
-            <form onSubmit={submitForm}> Form Component
+        <div id="form">
+            <form onSubmit={submitForm}> Task Manager
                 <div>
                     <label>{label}</label>
                     <input 

@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React from "react";
+import Task from "./task";
 
 const TaskList = (props) => {
+    const {tasks,deleteTask} = props; 
 
-    const {tasks} = props
     return (
         <ul className="task-list">
-                {tasks.map((item,i) => {
+                {tasks.map((task,i) => {
                     return(
-                        <div id={i} key={i}>
-                            <li>{item.text}</li>
-                        </div>
+                        <Task
+                            task={task}
+                            i={i}
+                            key={i}
+                            deleteTask={deleteTask}
+                        />
                     )
-                })};
+                })}
         </ul>
     )
 }
