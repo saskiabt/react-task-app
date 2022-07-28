@@ -7,7 +7,6 @@ function Form(props) {
     const onChange = (event) => {
         setTask({
                     text:event.target.value,
-                    isCompleted: false
                 });
     };
 
@@ -22,8 +21,8 @@ function Form(props) {
 
 
     return (
-        <div id="form">
-            <form onSubmit={submitForm}> Task Manager
+        <div id="form"> Task Manager
+            <form onSubmit={submitForm}> 
                 <div>
                     <label>{label}</label>
                     <input 

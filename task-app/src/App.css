@@ -1,9 +1,17 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  font-size: large;
 }
 
 #content {
-  padding: 0px 20%;
+  padding: 5vh 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @-webkit-keyframes App-logo-spin {
@@ -39,14 +47,29 @@ ul .list-item {
   padding-right: 10px;
   border-top: 0.2px solid black;
 }
+ul .list-item:hover {
+  background-color: #f7fcff;
+}
+ul .button-box {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
 
 #\30  {
   border-top: none;
 }
 
-form > div {
+#form {
+  padding-bottom: 2vh;
+}
+#form form {
+  padding-top: 1vh;
+}
+#form form > div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 2vmax;
+  align-items: center;
 }/*# sourceMappingURL=App.css.map */

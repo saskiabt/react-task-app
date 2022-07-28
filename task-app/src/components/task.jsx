@@ -2,7 +2,7 @@ import React from "react";
 
 let completedStyling = {
     div: {
-        backgroundColor: "#587b5f",
+        backgroundColor: "#4caf50",
         color: "white"
     }
 }
