@@ -1,4 +1,8 @@
-$list-item-color:#f7fcff;
+$list-item-hover:#726581;
+$button-hover-color: rgb(182, 224, 252);
+$delete-color: #ff938b;
+$complete-color: #c5e1a5;
+$dark-purple:rgb(42, 30, 58);
 
 .App {
     text-align: center;
@@ -42,9 +46,11 @@ ul {
         padding-left: 10px;
         padding-right: 10px;
         border-top: .2px solid black;
+        background-color: white;
+        color: #014218;
 
         &:hover {
-          background-color: $list-item-color;
+          background-color:rgb(205 240 241 / 31%);
         }
     }
 
@@ -52,6 +58,18 @@ ul {
       display: flex;
       flex-direction: row;
       gap: 5px;
+
+      .complete{
+        &:hover {
+          background-color: $complete-color;
+        }
+      }
+
+      .delete {
+        &:hover {
+          background-color: $delete-color;
+        }
+      }
     }
 }
 
@@ -75,5 +93,13 @@ ul {
 
 }
 
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
 
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
 

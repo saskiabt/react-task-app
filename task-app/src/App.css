@@ -46,14 +46,22 @@ ul .list-item {
   padding-left: 10px;
   padding-right: 10px;
   border-top: 0.2px solid black;
+  background-color: white;
+  color: #014218;
 }
 ul .list-item:hover {
-  background-color: #f7fcff;
+  background-color: rgba(205, 240, 241, 0.31);
 }
 ul .button-box {
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+ul .button-box .complete:hover {
+  background-color: #c5e1a5;
+}
+ul .button-box .delete:hover {
+  background-color: #ff938b;
 }
 
 #\30  {
@@ -72,4 +80,13 @@ ul .button-box {
   justify-content: center;
   gap: 2vmax;
   align-items: center;
+}
+
+button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: rgb(182, 224, 252);
 }/*# sourceMappingURL=App.css.map */
