@@ -2,7 +2,7 @@ import React from "react";
 import Task from "./task";
 
 const TaskList = (props) => {
-    const {tasks,deleteTask} = props; 
+    const {tasks,deleteTask,completeTask} = props; 
 
     return (
         <ul className="task-list">
@@ -13,6 +13,7 @@ const TaskList = (props) => {
                             i={i}
                             key={i}
                             deleteTask={deleteTask}
+                            completeTask={completeTask}
                         />
                     )
                 })}

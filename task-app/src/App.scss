@@ -1,6 +1,10 @@
 .App {
     text-align: center;
   }
+
+  #content {
+    padding: 0px 20%;
+  }
   
   @keyframes App-logo-spin {
     from {
@@ -13,7 +17,7 @@
 
 ul { 
     border: 0.2px solid grey;
-    padding: 10px;
+    padding: 0px;
 
 
     .list-item {
@@ -24,6 +28,8 @@ ul {
         font-weight: bold;
         padding-top: 5px;
         padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         border-top: .2px solid black;
     }
 }

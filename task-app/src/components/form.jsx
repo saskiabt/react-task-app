@@ -5,7 +5,10 @@ function Form(props) {
     const {label,task,setTask,tasks,setTasks} = props;
 
     const onChange = (event) => {
-        setTask({text:event.target.value});
+        setTask({
+                    text:event.target.value,
+                    isCompleted: false
+                });
     };
 
     const submitForm = (event) => {
